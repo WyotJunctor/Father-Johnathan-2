@@ -1360,8 +1360,9 @@ GameObject:
   - component: {fileID: 709573736}
   - component: {fileID: 709573735}
   - component: {fileID: 709573734}
+  - component: {fileID: 709573738}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: IceBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1404,8 +1405,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 66ba0c3ddbee5854c98cd9ee64b68918, type: 2}
-  - {fileID: 2100000, guid: 29938eab63ddaaf43b0b1aae524a7358, type: 2}
+  - {fileID: 2100000, guid: 03a01a64b43c9d0468d00f77f66125ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1441,13 +1441,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709573733}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0.9362, z: -0.26904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.281618, y: 7.475402, z: -5.4050603}
   m_LocalScale: {x: 1.5, y: 1.8103802, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 865616133}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &709573738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709573733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000001, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &833012115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400068, guid: 4f853fc010b06f7409005ef8e646e2f0,
@@ -1535,6 +1548,38 @@ CapsuleCollider:
   m_Height: 0.45769632
   m_Direction: 0
   m_Center: {x: -0.22884816, y: 0, z: 0}
+--- !u!1 &865616132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865616133}
+  m_Layer: 0
+  m_Name: THE PAPA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &865616133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865616132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.58, y: -6.5392017, z: 7.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1185618699}
+  - {fileID: 709573737}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003869569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100072, guid: 4f853fc010b06f7409005ef8e646e2f0,
@@ -2263,6 +2308,18 @@ MonoBehaviour:
     m_Values: 0100000044656661756c74ffffffff0000000001010000000000000000000000000000003f00000000000000000000000000000000000000000000000000000000803fcdcccc3dcdcc4c3e00020000000000000000000000000000000000000001010000000002000000020000000000000000000000ffffffffffffffffffffffff000000000001ffffffffcdcc4c3effffffff000080c00100000000
     m_UnityObjects: []
     m_Version: 2.1.10
+  - m_ObjectType: Opsive.UltimateCharacterController.Character.Abilities.Interact
+    m_ValueHashes: 65e77897b61df252c31ddd78760b38d8b345095a0edf2c3c5876362d3ce85fa374b19fd18249d95b217d9091222fcbce2ba74b251359ac83ee4238d5ffb9632cddf8a6ead0a78dd32aefcce8bbeb01425f036c3636e7590d67d2cf810e32f02c9527e5d2d13e8476957d98fc68c565c421440228daf4a3f9fe652832545bd2889eb85dafa45b4fe5e6d9d16130375d8836da4ebe5677262c6127d390990c81fa08c374965d397b67dae18591ac51537cb0f1b9d18e3485f8ae514f0f4859b60772ed5b1d8f8d069f2128f2420c74df7a727037b30794aa33decca26f1dad48e226e02593a2367211515be98249bf817f0dcd35d5108bc5623d5684b597de379d77986114f90b85be9a0143951d2ed839ff43725af02c31db71f9fe51bd37c57637568e71b8225ce80461220d
+    m_ValuePositions: 0000000004000000040000000b0000000f000000130000001400000015000000190000001d00000021000000270000002b0000002c0000002c0000002c0000003000000034000000380000003c0000003c0000003c0000003c000000400000004100000045000000490000004d00000051000000510000005200000056000000560000005a0000005e0000005e000000620000006600000067000000680000006c0000007000000074000000780000007c000000800000008000000084000000880000008c0000008d0000008e0000008e0000009200000092000000960000009a0000009b0000009c000000a0000000a4000000a8000000ac000000b8000000bc000000c0000000c4000000c8000000c9000000cd000000cd000000ce000000d2000000d2000000d3000000
+    m_Values: 0100000044656661756c74ffffffff000000000101020000000100000001000000416374696f6e0000003f00000000000000000000000000000000000000000000000000000000803fcdcccc3dcdcc4c3e00090000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000001ffffffff02000000dbffff8f00010000b443ffffffff0000803f00000000000000000000803f00000000010000000000003f01000000ffffffff000000000000cdcc4c3e00cdcc4c3e
+    m_UnityObjects: []
+    m_Version: 2.1.10
+  - m_ObjectType: Opsive.UltimateCharacterController.Character.Abilities.PickupItem
+    m_ValueHashes: 65e77897b61df252c31ddd78760b38d8b345095a0edf2c3c5876362d3ce85fa374b19fd18249d95b217d9091222fcbce2ba74b251359ac83ee4238d5ffb9632cddf8a6ead0a78dd32aefcce8bbeb01425f036c3636e7590d67d2cf810e32f02c9527e5d2d13e8476957d98fc68c565c421440228daf4a3f9fe652832545bd2889eb85dafa45b4fe5e6d9d16130375d8836da4ebe5677262c6127d390990c81fa08c374965d397b67dae18591ac51537cb0f1b9d18e3485f8ae514f0f4859b60772ed5b1d8f8d069f2128f2420c74df7a727037b30794aa33decca26f1dad48e226e02593a2367211515be98249bf817f0dcd35d5108bc5623d5684b597de379d77986114f90b85be88804acf2d3067f52a2e70d6abfa3d4df7380472717dbd99f2498b103e885135
+    m_ValuePositions: 0000000004000000040000000b0000000f000000130000001400000015000000190000001d00000021000000270000002b0000002c0000002c0000002c0000003000000034000000380000003c0000003c0000003c0000003c000000400000004100000045000000490000004d00000051000000510000005200000056000000560000005a0000005e0000005e000000620000006600000067000000680000006c0000007000000074000000780000007c000000800000008000000084000000880000008c0000008d0000008e0000008e0000009200000092000000960000009a0000009b0000009c000000a0000000a4000000a8000000ac000000b8000000bc000000c0000000c4000000c8000000cc000000cc000000cd000000d1000000d1000000d2000000
+    m_Values: 0100000044656661756c74ffffffff000000000101020000000100000001000000416374696f6e0000003f00000000000000000000000000000000000000000000000000000000803fcdcccc3dcdcc4c3e000b0000000000000000000000000000000000000001010000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000ffffffff01000000dfffff8f00010000b443ffffffff0000803f00000000000000000000803f00000000010000000000003f01000000ffffffff0000000001cdcc4c3e00cdcccc3e
+    m_UnityObjects: []
+    m_Version: 2.1.10
   - m_ObjectType: Opsive.UltimateCharacterController.Character.Abilities.MoveTowards
     m_ValueHashes: 65e77897b61df252c31ddd78760b38d8b345095a0edf2c3c5876362d3ce85fa374b19fd18249d95b222fcbce2ba74b251359ac83ee4238d5ffb9632cddf8a6ead0a78dd32aefcce8bbeb01425f036c3636e7590d67d2cf810e32f02c9527e5d2d13e8476957d98fc68c565c421440228daf4a3f9fe652832545bd2889eb85dafa45b4fe5e6d9d16130375d8836da4ebe5677262c6127d390990c81fa08c374965d397b67dae18591ac51537cb0f1b9d18e3485f8ae514f0f4859b60772ed5b1d8f8d069f2128f2420c74df7a727037b30794aa3332d00a20
     m_ValuePositions: 0000000004000000040000000b0000000f000000130000001400000015000000190000001d00000021000000250000002600000026000000260000002a0000002e00000032000000360000003600000036000000360000003a0000003b0000003f00000043000000470000004b0000004b0000004c00000050000000500000005400000058000000580000005c000000600000006100000062000000660000006a0000006e00000072000000760000007a0000007a0000007e00000082000000860000008700000088000000880000008c0000008c000000
@@ -2613,14 +2670,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185618697}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.174, y: 0, z: -0.309}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -20.275618, y: 6.5392017, z: -5.44502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 689383651}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 865616133}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1318118870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100086, guid: 4f853fc010b06f7409005ef8e646e2f0,
@@ -3100,6 +3157,90 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1874111358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9919143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.48951
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.48951
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914190969522341539, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.48951
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244383919862527152, guid: 01822bb9cb94da84d89c0af46c6f9108,
+        type: 3}
+      propertyPath: m_Name
+      value: pizza FBX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01822bb9cb94da84d89c0af46c6f9108, type: 3}
 --- !u!1 &1968899872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100080, guid: 4f853fc010b06f7409005ef8e646e2f0,
